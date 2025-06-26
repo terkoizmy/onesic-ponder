@@ -1,9 +1,8 @@
 import { ponder } from "ponder:registry";
 import { transaction } from "ponder:schema";
 
-ponder.on("ExampleContract:Transaction", async ({ event, context }) => {
+ponder.on("ExampleContract:Transaction", async ({ event, context }: any) => {
   const { student, amount, to } = event.args;
-  console.log(student, amount, to)
 
   await context.db
   .insert(transaction)
