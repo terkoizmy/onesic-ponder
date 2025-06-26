@@ -3,7 +3,7 @@
   "outputDirectory": "dist",
   "functions": {
     "dist/api/index.js": {
-      "runtime": "nodejs@20.x",
+      "runtime": "nodejs@20.19.0",
       "memory": 256
     }
   },
