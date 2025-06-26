@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json", // Warisi pengaturan dasar Anda
+  "compilerOptions": {
+    "outDir": "./dist",       // Output JavaScript yang sudah dikompilasi ke folder 'dist'
+    "rootDir": "./src",       // Sumber TypeScript ada di folder 'src'
+    "module": "NodeNext",     // Pastikan ini sesuai dengan "type": "module" Anda
+    "moduleResolution": "NodeNext",
+    "noEmit": false,          // Izinkan kompilasi dan keluaran file JavaScript
+    "declaration": false,     // Tidak perlu file deklarasi .d.ts untuk deployment
+    "sourceMap": false        // Tidak perlu source map untuk deployment
+  },
+  "include": ["src/**/*.ts"] // Hanya kompilasi file di dalam src/
+}
